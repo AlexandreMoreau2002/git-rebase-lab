@@ -66,10 +66,8 @@ git checkout -b feature/log-add
 ```
 Modifie `calculator.py` :
 ```python
-import logging
-
 def add(a, b):
-    logging.info(f"Adding {a} and {b}")
+    print(f"Addition de {a} + {b}")
     return a + b
 ```
 ```bash
@@ -85,9 +83,10 @@ git checkout -b feature/improve-add develop
 Modifie `calculator.py` :
 ```python
 def add(a, b):
-    if isinstance(a, str) or isinstance(b, str):
-        raise TypeError("Inputs must be numbers")
+    if type(a) != int or type(b) != int:
+        raise ValueError("Both arguments must be integers")
     return a + b
+
 ```
 ```bash
 git commit -am "feat: improve add() to check types"
