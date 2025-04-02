@@ -133,16 +133,3 @@ rm -rf .git && git init
 ```
 - Pour tester plusieurs fois, fais une copie du dossier initial
 - Utilise `git status`, `git log`, et `git diff` souvent pour comprendre ce qui se passe
-
----
-
-## 📘 Ressources utiles
-
-- https://git-scm.com/docs/git-rebase
-- https://learngitbranching.js.org
-- https://git-school.github.io/visualizing-git
-
----
-
-Tu veux que je te génère un script Bash pour automatiser la création de cet environnement ?
-
